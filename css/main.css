@@ -252,11 +252,13 @@ button {
     display: flex;
     align-items: center;
     margin-left: 61px;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .menu {
-    margin-left: 70px;
+    margin-left: 130px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -328,7 +330,7 @@ button {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .menu__phone-and-btn {
     flex-direction: row;
-    margin-left: 312px;
+    margin-right: 17px;
     padding-top: 0;
   }
   .menu__phone-and-btn .menu__btn {
