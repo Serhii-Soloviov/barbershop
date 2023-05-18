@@ -1,0 +1,25 @@
+.btn {
+	padding: 12px 20px;
+	border: 1px solid $accentColor;
+	border-radius: 25px;
+	width: max-content;
+
+	font-weight: 600;
+	font-size: 12px;
+	// line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+
+	background-color: transparent;
+
+	transition: background-color 250ms linear, color 250ms linear;
+
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		background-color: $accentColor;
+		color: $lightTextColor;
+		outline: none;
+		-webkit-tap-highlight-color: transparent;
+	}
+}

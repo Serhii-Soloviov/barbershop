@@ -1,0 +1,35 @@
+.header {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	padding-top: 8.33vw;
+	padding-bottom: 0;
+
+	@media screen and (min-width: 480px) {
+		padding-top: 40px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-top: 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 40px;
+	}
+}
+.section-container--header {
+	position: relative;
+	flex-direction: row;
+
+	@media screen and (min-width: 768px) {
+		padding-left: 49px;
+
+		display: flex;
+		align-items: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding-left: 15px;
+	}
+}

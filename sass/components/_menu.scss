@@ -1,0 +1,130 @@
+@media screen and (min-width: 768px) {
+	.menu {
+		display: flex;
+		align-items: center;
+		margin-left: 61px;
+
+		@media screen and (min-width: 1200px) {
+			margin-left: 70px;
+		}
+	}
+
+	.nav__list {
+		display: flex;
+	}
+	.nav__item:not(:first-child) {
+		margin-left: 24px;
+
+		@media screen and (min-width: 1200px) {
+			margin-left: 40px;
+		}
+	}
+	.nav__link {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.1em;
+
+		color: $lightTextColor;
+		transition: color 250ms linear;
+
+		&:hover,
+		&:focus {
+			color: $accentColor;
+			outline: none;
+		}
+	}
+
+	.menu__phone {
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.1em;
+
+		color: $lightTextColor;
+		transition: color 250ms linear;
+
+		&:hover,
+		&:focus {
+			color: $accentColor;
+			outline: none;
+		}
+
+		@media screen and (min-width: 768px) and (max-width: 1199px) {
+			order: 10;
+		}
+	}
+
+	.menu__btn {
+		padding: 12px 37px;
+
+		color: $lightTextColor;
+	}
+
+	.menu__phone-and-btn {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			margin-left: 44px;
+			padding-top: 40px;
+
+			.menu__btn {
+				margin-bottom: 20px;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			flex-direction: row;
+			margin-left: 312px;
+			padding-top: 0;
+
+			.menu__btn {
+				margin-bottom: 0;
+				margin-left: 40px;
+			}
+		}
+	}
+
+	.header__sm-list {
+		display: flex;
+		align-items: center;
+
+		position: absolute;
+		left: 81px;
+		bottom: -545px;
+
+		&::before {
+			display: block;
+			content: "";
+			width: 60px;
+			height: 2px;
+			background-color: #303030;
+		}
+
+		transform-origin: left bottom;
+		transform: rotate(-90deg);
+
+		@media screen and (min-width: 1200px) {
+			left: 51px;
+		}
+	}
+	.header__sm-item {
+		margin-left: 40px;
+	}
+	.header__sm-link {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 1.36;
+		letter-spacing: 0.2em;
+
+		transition: color 250ms linear;
+
+		&:hover,
+		&:focus {
+			color: $accentColor;
+			outline: none;
+		}
+	}
+}

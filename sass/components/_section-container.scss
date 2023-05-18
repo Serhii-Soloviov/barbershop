@@ -1,0 +1,24 @@
+.section-container {
+	display: flex;
+	flex-direction: column;
+
+	width: 100vw;
+	padding: 4.17vw 6.46vw 0 6.46vw;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+		padding: 20px 31px 0 31px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+		padding: 20px 39px 0 39px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+		padding: 20px 15px 0 15px;
+	}
+}
